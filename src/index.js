@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import DashboardComponent from './Component/dashboardComponent';
+import App from './app.js';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(<BrowserRouter>
-    <DashboardComponent />
-  </BrowserRouter>, document.getElementById('root'));
+                  <App />
+                </BrowserRouter>, document.getElementById('root'));
 
 
 

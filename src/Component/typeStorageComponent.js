@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Dashboard extends Component {
+class TypeStorage extends Component {
   render() {
     return (
       <div className="Dashboard">
-        this is the dashboard
+        this is the typeStorage
       </div>
     );
   }
 }
 
-export default Dashboard;
+export default TypeStorage;
