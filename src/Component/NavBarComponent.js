@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Route, Link } from "react-router-dom"
-import DashboardComponent from "./dashboardComponent.js"
+import { BrowserRouter as Link } from "react-router-dom"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Navbar extends Component {
   render() {
@@ -16,19 +17,22 @@ class Navbar extends Component {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/dashboard">Dashboard</Link>
-                <Route path="/dashboard" component={DashboardComponent} />
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Features</a>
+                <Link className="nav-link" to="/storage">Storage</Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
-              </li>
-
+            </ul>
+            <ul className="navbar-nav">
+                <li className="nav-item dropdown active">
+                    <Link className="nav-link dropdown-toggle" href="#" id="dropdownUser" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <FontAwesomeIcon icon="user-circle" /> User</Link>
+                    <div className="dropdown-menu kelp-dropdown-menu-sm" aria-labelledby="dropdownUser">
+                        <a className="dropdown-item" href="/logout">Déconnexion</a>
+                    </div>
+                </li>
             </ul>
           </div>
         </nav>
-
     );
   }
 }
