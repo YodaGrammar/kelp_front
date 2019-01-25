@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 //Navigation
-import Navbar from "./component/navbarComponent";
 import Dashboard from "./component/dashboardComponent";
+import Navbar from "./component/navbarComponent";
 import Storage from "./component/storageComponent";
 import TypeStorage from "./component/typeStorageComponent";
 
