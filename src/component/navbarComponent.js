@@ -24,11 +24,21 @@ class Navbar extends Component {
               </ul>
               <ul className="navbar-nav">
                     <li className="nav-item dropdown cursor-pointer">
-                      <div className="nav-link dropdown-toggle cursor-pointer" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Administration
-                      </div>
+                      </a>
                       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link className="dropdown-item" to="/type_storage">Action</Link>
+                        <Link className="dropdown-item" to="/type_storage">Type Storage</Link>
+                        <Link className="dropdown-item" to="/packaging">Packaging</Link>
+                        <Link className="dropdown-item" to="/user">User</Link>
+                      </div>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a className="nav-link dropdown-toggle" href="#" id="dropdownUser" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <FontAwesomeIcon icon="user-circle" /> User
+                      </a>
+                      <div className="dropdown-menu kelp-dropdown-menu-sm" aria-labelledby="dropdownUser">
+                        <a className="dropdown-item" href="/logout">Déconnexion</a>
                       </div>
                     </li>
               </ul>
