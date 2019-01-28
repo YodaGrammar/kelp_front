@@ -7,6 +7,7 @@ import Navbar from "./component/navbarComponent";
 import Storage from "./component/storageComponent";
 import TypeStorageTemplate from "./template/typeStorageTemplate";
 import PackagingTemplate from "./template/packagingTemplate";
+import UserTemplate from "./template/userTemplate";
 
 //fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -23,6 +24,7 @@ class App extends Component {
           <Route path="/storage" component={Storage} />
           <Route path="/type_storage" component={TypeStorageTemplate} />
           <Route path="/packaging" component={PackagingTemplate} />
+          <Route path="/user" component={UserTemplate} />
         </Switch>
         </div>
       </div>
