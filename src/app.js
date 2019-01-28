@@ -5,27 +5,29 @@ import { Route, Switch } from 'react-router-dom';
 import Dashboard from "./component/dashboardComponent";
 import Navbar from "./component/navbarComponent";
 import Storage from "./component/storageComponent";
-import TypeStorage from "./component/typeStorageComponent";
+import TypeStorageTemplate from "./template/typeStorageTemplate";
 
 //fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUserCircle, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle, faPlay, faTrashAlt, faPencilAlt} from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
   render() {
     return (
+      <div>
+        <Navbar />
         <div className="container">
-          <Navbar />
-          <Switch>
-            <Route path="/dashboard" component={Dashboard} />
-            <Route path="/storage" component={Storage} />
-            <Route path="/type_storage" component={TypeStorage} />
-          </Switch>
+        <Switch>
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/storage" component={Storage} />
+          <Route path="/type_storage" component={TypeStorageTemplate} />
+        </Switch>
         </div>
+      </div>
     );
   }
 };
 
-library.add(faUserCircle, faPlay)
+library.add(faUserCircle, faPlay, faTrashAlt, faPencilAlt)
 
 export default App;

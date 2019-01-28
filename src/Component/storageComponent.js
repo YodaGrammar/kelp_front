@@ -8,19 +8,18 @@ class Storage extends Component {
       error: null,
       isLoaded: false,
       items:  [
-  {
-    "id": 0,
-    "label": "string",
-    "user": "string",
-    "typeStorage": "string",
-    "products": [
-      "string"
-    ],
-    "active": true
-  }
-]
+        {
+          "id": 0,
+          "label": "string",
+          "user": "string",
+          "typeStorage": "string",
+          "products": [
+            "string"
+          ],
+          "active": true
+        }
+      ]
     }
-
   }
 
   // componentDidMount() {
@@ -45,36 +44,36 @@ class Storage extends Component {
   //         )
   //     }
 
-    // render() {
-    //     const { error, isLoaded, items } = this.state;
-    //     if (error) {
-    //       return <div>Error: {error.message}</div>;
-    //     } else if (!isLoaded) {
-    //       return <div>Loading...</div>;
-    //     } else {
-    //       return (
-    //         <ul>
-    //           {items.map(item => (
-    //             <li key={item.name}>
-    //               {item.name} {item.price}
-    //             </li>
-    //           ))}
-    //         </ul>
-    //       );
-    //     }
-    //   }
-    render () {
-      const { error, isLoaded, items } = this.state;
-            return (
-              <ul>
-                {items.map(item => (
-                  <li key={item.label}>
-                    {item.label} {item.typeStorage}
-                  </li>
-                ))}
-              </ul>
-            );
-    }
+  // render() {
+  //     const { error, isLoaded, items } = this.state;
+  //     if (error) {
+  //       return <div>Error: {error.message}</div>;
+  //     } else if (!isLoaded) {
+  //       return <div>Loading...</div>;
+  //     } else {
+  //       return (
+  //         <ul>
+  //           {items.map(item => (
+  //             <li key={item.name}>
+  //               {item.name} {item.price}
+  //             </li>
+  //           ))}
+  //         </ul>
+  //       );
+  //     }
+  //   }
+  render () {
+    const { error, isLoaded, items } = this.state;
+    return (
+      <ul>
+      {items.map(item => (
+        <li key={item.label}>
+        {item.label} {item.typeStorage}
+        </li>
+      ))}
+      </ul>
+    );
+  }
 
 }
 
