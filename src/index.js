@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import $ from 'jquery';
-import Popper from 'popper.js';
+import 'jquery';
+import 'popper.js';
 
 import App from './app.js';
 import * as serviceWorker from './serviceWorker';
