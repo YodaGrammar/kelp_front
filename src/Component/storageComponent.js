@@ -64,6 +64,11 @@ class Storage extends Component {
   //   }
   render () {
     const { error, isLoaded, items } = this.state;
+
+    if(isLoaded) {
+      return (<div>{error}</div>)
+    }
+
     return (
       <ul>
       {items.map(item => (

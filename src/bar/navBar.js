@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-class Navbar extends Component {
+class NavBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container">
-            <Link className="navbar-brand" to="">Kelp</Link>
+            <NavLink className="navbar-brand" to="">Kelp</NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -16,10 +16,10 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarColor01">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dashboard">Dashboard</Link>
+                  <NavLink className="nav-link" to="/dashboard">Dashboard</NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/storage">Storage</Link>
+                  <NavLink className="nav-link" to="/storage">Storage</NavLink>
                 </li>
               </ul>
               <ul className="navbar-nav">
@@ -28,9 +28,9 @@ class Navbar extends Component {
                         Administration
                       </a>
                       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link className="dropdown-item" to="/type_storage">Type Storage</Link>
-                        <Link className="dropdown-item" to="/packaging">Packaging</Link>
-                        <Link className="dropdown-item" to="/user">User</Link>
+                        <NavLink className="dropdown-item" to="/type_storage">Type Storage</NavLink>
+                        <NavLink className="dropdown-item" to="/packaging">Packaging</NavLink>
+                        <NavLink className="dropdown-item" to="/user">User</NavLink>
                       </div>
                     </li>
                     <li className="nav-item dropdown">
@@ -49,4 +49,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default NavBar;
