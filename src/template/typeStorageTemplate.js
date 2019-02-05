@@ -16,10 +16,10 @@ class TypeStorageTemplate extends Component {
     fetch("http://kelp-dev.fr:8003/api/type_storages")
     .then(res => res.json())
     .then(
-      (result) => {
+      (response) => {
         this.setState({
           isLoaded: true,
-          items: result
+          items: response['hydra:member']
         });
       },
       (error) => {
