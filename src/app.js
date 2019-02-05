@@ -14,7 +14,7 @@ import HomeTemplate        from "./template/homeTemplate";
 import LoginTemplate       from "./template/loginTemplate";
 import PackagingTemplate   from "./template/packagingTemplate";
 import RegisterTemplate    from "./template/registerTemplate";
-import Storage             from "./component/storageComponent";
+import Storage             from "./template/storageTemplate";
 import TypeStorageTemplate from "./template/typeStorageTemplate";
 import UserTemplate        from "./template/userTemplate";
 
